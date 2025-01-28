@@ -1,8 +1,8 @@
 #roadmap
 
--layout macro-sturttura mobile  | tempo previsto: 3 ore |tempo effettivo: 
+-layout macro-sturttura mobile  | tempo previsto: 3 ore |tempo effettivo: 25 minuti 
 
--media query layout responsive  | tempo previsto: 2 ore |tempo effettivo: 
+-media query macro-layout responsive  | tempo previsto: 2 ore |tempo effettivo: 
 
 -elementi layout interni alle sezioni  | tempo previsto: 3 ore |tempo effettivo: 
 
