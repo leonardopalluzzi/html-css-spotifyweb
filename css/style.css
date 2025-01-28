@@ -195,6 +195,14 @@
     }
 }
 
+.artist{
+    text-align: center;
+    img{
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}
+
 /* #endregion layout  */
 
 @media screen and (min-width: 576px) {
