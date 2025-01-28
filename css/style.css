@@ -31,6 +31,72 @@
     border-radius: 2rem;
 }
 
+/* #region col  */
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col"]{
+    padding: 1rem;
+}
+
+.col-mobile{
+    width: auto;
+    flex-basis: auto;
+}
+
+.col-1-mobile {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2-mobile {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3-mobile {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4-mobile {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5-mobile {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6-mobile {
+    width: calc(100% / 12 * 6);
+}
+
+.col-7-mobile {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8-mobile {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9-mobile {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10-mobile {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11-mobile {
+    width: calc(100% / 12 *11);
+}
+
+.col-12-mobile {
+    width: calc(100% / 12 * 12);
+}
+
+/* #endregion col  */
+
 /* #endregion common  */
 
 
@@ -56,8 +122,6 @@
         background-color: pink;
     }
     .card{
-        height: 100px;
-        width: 100px;
         background-color: aqua;
     }
 }
@@ -121,6 +185,14 @@
 
 .player {
     height: var(--sp-player-height);
+}
+
+.card{
+    text-align: center;
+    img{
+        max-width: 100%;
+
+    }
 }
 
 /* #endregion layout  */
