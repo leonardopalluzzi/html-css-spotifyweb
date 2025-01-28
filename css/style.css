@@ -7,6 +7,7 @@
 
 :root{
     --sp-player-height: 100px;
+    --sp-upgrade-height: 100px;
 }
 
 .d-flex{
@@ -40,7 +41,7 @@
 
 /* #region layout  */
 .upgrade{
-    height: 100px;
+    height: var(--sp-upgrade-height);
     position: fixed;
     width: 100%;
 }
@@ -48,6 +49,7 @@
 .scroll{
     height: 100%;
     overflow-y: auto;
+    padding-top: var(--sp-upgrade-height);
 }
 
 .menu{
