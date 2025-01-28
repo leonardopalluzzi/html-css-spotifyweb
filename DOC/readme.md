@@ -2,7 +2,7 @@
 
 -layout macro-sturttura mobile  | tempo previsto: 3 ore |tempo effettivo: 25 minuti 
 
--media query macro-layout responsive  | tempo previsto: 2 ore |tempo effettivo: 
+-media query macro-layout responsive  | tempo previsto: 2 ore |tempo effettivo: 20 minuti 
 
 -elementi layout interni alle sezioni  | tempo previsto: 3 ore |tempo effettivo: 
 

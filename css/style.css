@@ -56,6 +56,27 @@
 .menu{
     width: var(--sp-menu-width);
     height: calc(100vh - var(--sp-player-height));
+    flex-direction: column;
+    justify-content: space-between;
+    .logo-big{
+        display: none;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+
+.profile{
+    img{
+        display: block;
+    }
+    .profile-img{
+        height: 40px;
+        width: 40px;
+        background-color: grey;
+        border-style: none;
+        border-radius: 50%;
+    }
 }
 .content{
     width: 100%;
