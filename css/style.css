@@ -1,3 +1,4 @@
+/* #region common  */
 *{
     margin: 0;
     padding: 0;
@@ -8,47 +9,57 @@
     --sp-player-height: 100px;
 }
 
+.d-flex{
+    display: flex;
+}
+
+/* #endregion common  */
+
+
+/* #region utility  */
 .debug{
     *{
         border: 1px dashed black;
     }
     .menu{
-        width: 50px;
-        height: calc(100vh - var(--sp-player-height));
         background-color: cadetblue;
     }
-    .content{
-        width: 100%;
-        height: calc(100vh - var(--sp-player-height));
-        /* background-color: pink; */
-    }
     .upgrade{
-        height: 100px;
         background-color: burlywood;
     }
     .player{
-        height: var(--sp-player-height);
         background-color: red;
     }
     .scroll{
-        height: 100%;
         background-color: pink;
     }
 }
 
-.d-flex{
-    display: flex;
-}
+/* #endregion utility  */
 
-#site-main{
-    position: relative;
-}
 
+/* #region layout  */
 .upgrade{
+    height: 100px;
     position: fixed;
     width: 100%;
 }
 
 .scroll{
+    height: 100%;
     overflow-y: auto;
 }
+
+.menu{
+    width: 50px;
+    height: calc(100vh - var(--sp-player-height));
+}
+.content{
+    width: 100%;
+    height: calc(100vh - var(--sp-player-height));
+}
+.player{
+    height: var(--sp-player-height);
+}
+
+/* #endregion layout  */
