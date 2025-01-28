@@ -281,6 +281,10 @@
     height: 100%;
 }
 
+.recent, .for-you, .popular{
+    padding: 1rem;
+}
+
 /* #endregion layout  */
 
 @media screen and (min-width: 576px) {
