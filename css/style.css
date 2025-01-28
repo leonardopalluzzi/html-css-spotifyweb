@@ -31,6 +31,10 @@
     border-radius: 2rem;
 }
 
+.d-off{
+    display: none;
+}
+
 /* #region col  */
 .row {
     display: flex;
@@ -134,7 +138,7 @@
 .upgrade {
     height: var(--sp-upgrade-height);
     position: fixed;
-    width: calc(100% - var(--sp-menu-width));
+    width: calc(100vw - var(--sp-menu-width));
 }
 
 .scroll {
@@ -152,18 +156,21 @@
 }
 
 .menu {
-    width: var(--sp-menu-width);
+    min-width: var(--sp-menu-width);
     height: calc(100vh - var(--sp-player-height));
     flex-direction: column;
     justify-content: space-between;
 
-    .logo-big {
-        display: none;
-    }
-
     img {
         max-width: 100%;
     }
+}
+
+.logo-small{
+    display: block;
+}
+.logo-big{
+    display: none;
 }
 
 .profile {
@@ -195,7 +202,7 @@
     }
 
     .left-player {
-        padding-left: 0;
+        padding-left: 0.5rem;
 
         ul {
             flex-direction: column;
@@ -212,19 +219,25 @@
             align-items: center;
             margin-bottom: 0.5rem;
         }
-        hr{
+
+        hr {
             width: 150px;
         }
-        .controls, .timeline{
-            justify-content: space-between; 
+
+        .controls,
+        .timeline {
+            justify-content: space-between;
         }
     }
-    .right-player{
-        ul{
+
+    .right-player {
+        padding-right: 0.5rem;
+        ul {
             align-items: center;
-            justify-content: center;
+            justify-content: right;
         }
-        hr{
+
+        hr {
             width: 30px;
         }
     }
@@ -248,10 +261,154 @@
     }
 }
 
+.playlist{
+    height: 100%;
+}
+
 /* #endregion layout  */
 
 @media screen and (min-width: 576px) {
     :root {
-        --sp-menu-width: 250px
+        --sp-menu-width: 200px
     }
+
+    .img-small{
+        max-width: 20%;
+    }
+    
+    .menu  ul, .profile {
+        img {
+            max-width: 20%;
+        }
+    }
+
+    .logo-small{
+        display: none;
+    }
+    .logo-big{
+        display: block;
+    }
+
+    .d-on{
+        display: inline-block;
+    }
+    
 }
+
+@media screen and (min-width: 768px) {
+    /* #region col  */
+.col-tablet {
+    width: auto;
+    flex-basis: auto;
+}
+
+.col-1-tablet {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2-tablet {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3-tablet {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4-tablet {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5-tablet {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6-tablet {
+    width: calc(100% / 12 * 6);
+}
+
+.col-7-tablet {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8-tablet {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9-tablet {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10-tablet {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11-tablet {
+    width: calc(100% / 12 *11);
+}
+
+.col-12-tablet {
+    width: calc(100% / 12 * 12);
+}
+
+/* #endregion col  */
+}
+
+@media screen and (min-width: 992px) {
+    /* #region col  */
+.col-desktop {
+    width: auto;
+    flex-basis: auto;
+}
+
+.col-1-desktop {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2-desktop {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3-desktop {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4-desktop {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5-desktop {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6-desktop {
+    width: calc(100% / 12 * 6);
+}
+
+.col-7-desktop {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8-desktop {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9-desktop {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10-desktop {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11-desktop {
+    width: calc(100% / 12 *11);
+}
+
+.col-12-desktop {
+    width: calc(100% / 12 * 12);
+}
+
+/* #endregion col  */
+}
+
+
