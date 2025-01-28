@@ -8,6 +8,7 @@
 :root{
     --sp-player-height: 100px;
     --sp-upgrade-height: 100px;
+    --sp-menu-width: 50px
 }
 
 .d-flex{
@@ -53,7 +54,7 @@
 }
 
 .menu{
-    width: 50px;
+    width: var(--sp-menu-width);
     height: calc(100vh - var(--sp-player-height));
 }
 .content{
@@ -65,3 +66,9 @@
 }
 
 /* #endregion layout  */
+
+@media screen and (min-width: 576px) {
+    :root{
+        --sp-menu-width: 250px
+    }
+}
