@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Boolean</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="debug">
@@ -116,7 +119,48 @@
         </div>
         <!-- ./content  -->
     </main>
-    <div class="player"></div>
+    <div class="player d-flex">
+        <div class="col-3-mobile left-player d-flex">
+            <img src="./spotify/img/sinister.jpeg" alt="song cover">
+            <div class="song-data">
+                <h5>titolo</h5>
+                <h6>sottotitlo</h6>
+                <h6>sottitolo</h6>
+            </div>
+
+            <ul class="d-flex">
+                <li>icona 1</li>
+                <li>icona 2</li>
+            </ul>
+        </div>
+        <div class="col-6-mobile mid-player">
+
+            <ul class="d-flex controls">
+                <li>random</li>
+                <li>prev</li>
+                <li>play</li>
+                <li>next</li>
+                <li>again</li>
+            </ul>
+            <ul class="d-flex timeline">
+                <li>0:25</li>
+                <li>
+                    <hr>
+                </li>
+                <li>4:35</li>
+            </ul>
+        </div>
+        <div class="col-3-mobile right-player">
+            <ul class="d-flex">
+                <li>ic 1</li>
+                <li>ic 2</li>
+                <li>ic 3</li>
+                <li>
+                    <hr>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>

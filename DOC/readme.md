@@ -4,7 +4,7 @@
 
 -media query macro-layout responsive  | tempo previsto: 2 ore |tempo effettivo: 20 minuti 
 
--elementi layout interni alle sezioni  | tempo previsto: 3 ore |tempo effettivo: 
+-elementi layout interni alle sezioni  | tempo previsto: 3 ore |tempo effettivo: 4 ore (inclusi 40 min pausa pranzo)
 
 -media query per elementi interni alle sezioni  | tempo previsto: 1 ora |tempo effettivo: 
 
