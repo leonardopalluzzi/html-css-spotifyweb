@@ -8,7 +8,7 @@
 
 -media query per elementi interni alle sezioni  | tempo previsto: 1 ora |tempo effettivo: 1ora e qualche minuto
 
--preparazione varibili css, font e style  | tempo previsto: 20 minuti|tempo effettivo: 
+-preparazione varibili css, font e style  | tempo previsto: 3 ore|tempo effettivo: 
 
 -inserimento contenuti  | tempo previsto: 2 ore|tempo effettivo: 
 

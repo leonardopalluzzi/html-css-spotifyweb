@@ -10,9 +10,20 @@
 }
 
 :root {
+    /* dimensions  */
     --sp-player-height: 100px;
     --sp-upgrade-height: 70px;
-    --sp-menu-width: 50px
+    --sp-menu-width: 50px;
+
+    /* site colors  */
+    --sp-darkest: black;
+    --sp-semi-transparent: rgba(0, 0, 0, 0.466);
+    --sp-dark-1: #141922;
+    --sp-dark-2: #282828;
+    --sp-mid-1: #7b7d82;
+    --sp-mid-2: #a3a3a3;
+    --sp-cta: #a8f82e;
+    --sp-lighter: white;
 }
 
 .d-flex {
@@ -27,8 +38,9 @@
     text-transform: uppercase;
     background-color: transparent;
     padding: 0.6rem 2rem;
-    border: 1px solid white;
+    border: 1px solid var(--sp-lighter);
     border-radius: 2rem;
+    color: var(--sp-lighter);
 }
 
 .d-off{
@@ -139,13 +151,15 @@
     height: var(--sp-upgrade-height);
     position: fixed;
     width: calc(100vw - var(--sp-menu-width));
+    background-color: var(--sp-semi-transparent);
 }
 
 .scroll {
     height: 100%;
     overflow-y: auto;
     padding-top: var(--sp-upgrade-height);
-
+    background-color: var(--sp-dark-1);
+    color: var(--sp-lighter);
     ul {
         list-style: none;
         text-decoration: none;
@@ -160,7 +174,8 @@
     height: calc(100vh - var(--sp-player-height));
     flex-direction: column;
     justify-content: space-between;
-
+    background-color: var(--sp-darkest);
+    color: var(--sp-mid-2);
     img {
         max-width: 100%;
     }
@@ -196,7 +211,8 @@
     height: var(--sp-player-height);
     font-size: 0.6rem;
     align-items: center;
-
+    background-color: var(--sp-dark-2);
+    color: var(--sp-lighter);
     ul {
         list-style: none;
     }
