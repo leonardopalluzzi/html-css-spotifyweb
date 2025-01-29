@@ -35,7 +35,7 @@
     float: right;
     position: relative;
     top: 50%;
-    right: 2%;
+    right: 4%;
     transform: translate(0, -50%);
     text-transform: uppercase;
     background-color: transparent;
@@ -602,10 +602,23 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
 }
 
 /* #endregion layout  */
+
+@media screen and (max-width: 400px) {
+    .song-data{
+        display: none;
+    }
+
+    .right-player ul{
+        flex-direction: column;
+        .empty-bar{
+            display: none;
+        }
+    }
+    
+}
 @media screen and (max-height: 420px) {
     .menu {
         overflow: hidden;
-        /* overflow-y: auto; */
     }
 }
 
@@ -767,7 +780,7 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
 @media screen and (min-width: 768px) {
     .player .right-player {
         padding: 0 1rem;
-    }
+    }  
 
     .player .mid-player {
         li {
@@ -783,6 +796,12 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
         img {
             width: auto;
             height: 44px;
+        }
+        ul{
+            flex-direction: row !important; 
+            li{
+                margin-right: 0.5rem;
+            }
         }
     }
 

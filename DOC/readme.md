@@ -14,4 +14,4 @@
 
 -creazione effettistica (hover, click, ecc..)  | tempo previsto: 1 ora|tempo effettivo: 3 ore
 
--testing ed eventuali fix  | tempo previsto: variabile |tempo effettivo: 
+-testing ed eventuali fix  | tempo previsto: variabile |tempo effettivo: 2 ore (con pausa)
