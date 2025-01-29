@@ -555,6 +555,13 @@ ul {
         }
     }
 
+    .player .left-player{
+        img{
+            width: auto;
+            height: 38px; 
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -569,6 +576,13 @@ ul {
             min-width: 100%;
         }
     }
+
+    .player .left-player{
+        img{
+            width: auto;
+            height: 44px; 
+        }
+    } 
 
     /* #region col  */
     .col-tablet {
@@ -628,6 +642,13 @@ ul {
 }
 
 @media screen and (min-width: 992px) {
+    .player .right-player{
+        padding-left: 2rem;
+    }
+
+    .player .left-player{
+        width: 10%;
+    }
 
     /* #region col  */
     .col-desktop {
