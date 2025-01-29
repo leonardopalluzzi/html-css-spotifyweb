@@ -173,7 +173,8 @@ ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem 2rem;
-        a{
+
+        a {
             text-decoration: none;
             color: var(--sp-mid-2);
             font-size: 0.8rem;
@@ -192,18 +193,20 @@ ul {
     color: var(--sp-mid-2);
     align-items: center;
 
-    .logo{
+    .logo {
         margin-bottom: 1rem;
     }
 
     .up-menu {
-        a{
+        a {
             width: 200px;
         }
+
         li {
-            img{
+            img {
                 width: 30px;
             }
+
             margin-bottom: 0.4rem;
         }
     }
@@ -220,6 +223,7 @@ ul {
 
 .profile {
     text-align: center;
+
     .profile-img {
         height: 40px;
         width: 40px;
@@ -227,6 +231,7 @@ ul {
         border-style: none;
         border-radius: 50%;
     }
+
     .img-small {
         width: 20px;
     }
@@ -250,13 +255,26 @@ ul {
 
     .left-player {
         padding-left: 0.5rem;
+        align-items: center;
 
         ul {
             flex-direction: column;
+            justify-content: space-between;
+        }
+
+        li {
+            font-size: 1rem;
+            color: var(--sp-mid-1);
         }
 
         img {
-            width: 3rem;
+            width: auto;
+            height: 28px;
+            margin-right: 0.5rem;
+        }
+
+        .song-data {
+            margin-right: 0.5rem;
         }
     }
 
@@ -271,18 +289,38 @@ ul {
             width: 150px;
         }
 
-        .controls,
+        .controls {
+            justify-content: space-around;
+            font-size: 1.2rem;
+
+            .fa-circle-play {
+                font-size: 2rem;
+            }
+        }
+
         .timeline {
             justify-content: space-between;
+            & li:nth-child(2) {
+                padding: 0 1rem;
+                width: 100%;
+            }
         }
     }
 
     .right-player {
-        padding-right: 0.5rem;
+        padding: 0rem;
 
         ul {
             align-items: center;
             justify-content: right;
+            & li:nth-child(4){
+                width: 100%;
+            }
+        }
+
+        li {
+            margin-right: 0.5rem;
+            font-size: 0.7rem;
         }
 
         hr {
@@ -291,16 +329,44 @@ ul {
     }
 }
 
-.card{
+.empty-bar {
+    height: 4px;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: var(--sp-mid-2);
+    position: relative;
+}
+.full-bar-song {
+    position: absolute;
+    height: 4px;
+    width: 20%;
+    border-radius: 2rem;
+    background-color: var(--sp-lighter);
+    
+}
+
+.full-bar-volume {
+    position: absolute;
+    height: 4px;
+    width: 50%;
+    border-radius: 2rem;
+    background-color: var(--sp-lighter);
+    
+}
+
+.card {
     text-align: center;
+
     img {
         max-width: 100%;
         margin-bottom: 1rem;
     }
-    h4{
+
+    h4 {
         margin-bottom: 0.5rem;
     }
-    span{
+
+    span {
         font-size: 0.8rem;
         color: var(--sp-mid-1);
         font-weight: 700;
@@ -308,10 +374,11 @@ ul {
 }
 
 .for-you {
-    h2{
+    h2 {
         margin-bottom: 0.5rem;
     }
-    span{
+
+    span {
         font-size: 0.8rem;
         color: var(--sp-mid-1);
         font-weight: 700;
@@ -319,10 +386,11 @@ ul {
 }
 
 .popular {
-    h2{
+    h2 {
         margin-bottom: 0.5rem;
     }
-    span{
+
+    span {
         font-size: 0.8rem;
         color: var(--sp-mid-1);
         font-weight: 700;
@@ -357,27 +425,32 @@ ul {
 
     .up-menu {
         margin-bottom: 1rem;
-        a{
+
+        a {
             width: 200px;
         }
+
         li {
-            a{
+            a {
                 text-decoration: none;
                 color: var(--sp-lighter);
             }
-            img{
+
+            img {
                 width: 30px;
                 vertical-align: middle;
                 margin-right: 0.5rem;
             }
+
             margin-bottom: 0.4rem;
-            span{
+
+            span {
                 vertical-align: middle;
             }
         }
     }
 
-    .menu{
+    .menu {
         align-items: start;
         padding: 1rem;
     }
@@ -394,17 +467,20 @@ ul {
     .d-on {
         display: inline-block;
     }
-    .up-menu{
+
+    .up-menu {
         width: 100%;
     }
 
-    .btn-playlist{
+    .btn-playlist {
         margin-bottom: 1rem;
-        a{
+
+        a {
             text-decoration: none;
             color: var(--sp-mid-2);
         }
-        & span:nth-child(1){
+
+        & span:nth-child(1) {
             line-height: 30px;
             display: inline-block;
             text-align: center;
@@ -417,22 +493,25 @@ ul {
             height: 30px;
             margin-right: 0.5rem;
         }
-        & span:nth-child(2){
+
+        & span:nth-child(2) {
             font-weight: 600;
         }
     }
-    .playlist{
-        h2{
+
+    .playlist {
+        h2 {
             margin-bottom: 1rem;
         }
-        li{
+
+        li {
             margin-bottom: 1rem;
             font-size: 0.8rem;
         }
     }
 
-    .profile{
-        & div:nth-child(1){
+    .profile {
+        & div:nth-child(1) {
             display: flex;
             width: 150px;
             line-height: 50%;
@@ -442,14 +521,16 @@ ul {
             padding: 0.5rem 0;
             font-size: 0.8rem;
             color: var(--sp-mid-1);
-            
-            img{
+
+            img {
                 margin-right: 0.5rem;
             }
         }
-        & div:nth-child(2){
+
+        & div:nth-child(2) {
             align-items: center;
-            img{
+
+            img {
                 transform: scale(0.7);
             }
         }
