@@ -20,13 +20,16 @@
                     <img class="logo-big" src="./spotify/img/logo.svg" alt="spotify logo big">
                 </div>
                 <ul class="up-menu">
-                    <li><a href=""><img src="./spotify/img/home.svg" alt="home"><span class="d-off d-on">Home</span></a>
+                    <li><a href="#home"><img src="./spotify/img/home.svg" alt="home"><span class="d-off d-on">Home</span></a>
                     </li>
-                    <li><a href=""><img src="./spotify/img/search.svg" alt="searc"><span
+                    <li><a href="#cerca"><img src="./spotify/img/search.svg" alt="searc"><span
                                 class="d-off d-on">Cerca</span></a></li>
-                    <li><a href=""><img src="./spotify/img/libreria.svg" alt="Library"><span class="d-off d-on">La tua
-                                libreira</span></a></li>
+                    <li><a href="#libreria"><img src="./spotify/img/libreria.svg" alt="Library"><span class="d-off d-on">La tua
+                                libreria</span></a></li>
                 </ul>
+                <div id="home" class="d-off"></div>
+                <div id="cerca" class="d-off"></div>
+                <div id="libreria" class="d-off"></div>
             </div>
 
             <div class="d-on d-off playlist">
@@ -71,14 +74,22 @@
             <div class="scroll">
                 <nav>
                     <ul class="d-flex">
-                        <li><a href="">IN EVIDENZA</a></li>
-                        <li><a href="">PODCAST</a></li>
-                        <li><a href="">CLASSIFICHE</a></li>
-                        <li><a href="">GENERI E MOOD</a></li>
-                        <li><a href="">NUOVE USCITE</a></li>
-                        <li><a href="">SCOPRI</a></li>
+                        <li><a href="#evidenza">IN EVIDENZA</a></li>
+                        <li><a href="#podcast">PODCAST</a></li>
+                        <li><a href="#classifiche">CLASSIFICHE</a></li>
+                        <li><a href="#mood">GENERI E MOOD</a></li>
+                        <li><a href="#uscite">NUOVE USCITE</a></li>
+                        <li><a href="#scopri">SCOPRI</a></li>
+
+                        <div id="evidenza" class="d-off"></div>
+                        <div id="podcast" class="d-off"></div>
+                        <div id="classifiche" class="d-off"></div>
+                        <div id="mood" class="d-off"></div>
+                        <div id="uscite" class="d-off"></div>
+                        <div id="scopri" class="d-off"></div>
                     </ul>
                 </nav>
+
                 <!-- ./inside menu  -->
                 <div class="recent">
                     <h2>Recently played</h2>
@@ -89,7 +100,7 @@
                                 <div class="play-card"><a href=""><i class="fa-regular fa-circle-play"></i></a></div>
                                 <img src="./spotify/img/metal_lifting.jpg" alt="">
                             </div>
-                            
+
                             <h4>Heavy Metal</h4>
                             <span>Subtitle</span>
                         </div>
@@ -213,7 +224,9 @@
                 <li>0:25</li>
                 <li>
                     <div class="empty-bar">
-                        <div class="full-bar-song"></div>
+                        <div class="full-bar-song">
+                            <span class="dot"></span>
+                        </div>
                     </div>
                 </li>
                 <li>4:35</li>
@@ -226,7 +239,9 @@
                 <li><i class="fa-solid fa-volume-high"></i></li>
                 <li>
                     <div class="empty-bar">
-                        <div class="full-bar-volume"></div>
+                        <div class="full-bar-volume">
+                            <span class="dot"></span>
+                        </div>
                     </div>
                 </li>
             </ul>

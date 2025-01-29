@@ -12,6 +12,6 @@
 
 -inserimento contenuti  | tempo previsto: 2 ore|tempo effettivo: 1,5 ore
 
--creazione effettistica (hover, click, ecc..)  | tempo previsto: 1 ora|tempo effettivo: 
+-creazione effettistica (hover, click, ecc..)  | tempo previsto: 1 ora|tempo effettivo: 3 ore
 
 -testing ed eventuali fix  | tempo previsto: variabile |tempo effettivo: 
