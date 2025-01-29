@@ -428,6 +428,12 @@ ul {
 }
 
 /* #endregion layout  */
+@media screen and (max-height: 420px) {
+    .menu{
+        overflow: hidden;
+        /* overflow-y: auto; */
+    }
+}
 
 @media screen and (min-width: 576px) {
     :root {
@@ -562,6 +568,13 @@ ul {
         }
     }
 
+}
+
+@media screen and (max-height: 724px) {
+    .playlist{
+        overflow: hidden;
+        overflow-y: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -706,3 +719,4 @@ ul {
 
     /* #endregion col  */
 }
+
