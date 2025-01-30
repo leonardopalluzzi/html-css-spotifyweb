@@ -234,6 +234,10 @@ div:has(#scopri:target) .scroll ul li a[href="#scopri"]
         li {
             img {
                 width: 30px;
+                opacity: 50%;
+                &:hover{
+                    opacity: 100%;
+                }
             }
 
             margin-bottom: 0.4rem;
