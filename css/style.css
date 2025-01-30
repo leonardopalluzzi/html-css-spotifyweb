@@ -641,6 +641,10 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
 
             &:hover {
                 color: var(--sp-lighter);
+                img{
+                    opacity: 100%;
+                }
+
             }
         }
 
