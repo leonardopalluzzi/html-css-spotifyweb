@@ -230,6 +230,7 @@ div:has(#scopri:target) .scroll ul li a[href="#scopri"]
             width: 200px;
             padding: 0 0.5rem;
             border-left: 1px solid transparent;
+            transition-duration: 0s;
         }
 
         li {
@@ -640,7 +641,6 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
 
     .up-menu {
         margin-bottom: 1rem;
-
         a {
             width: 200px;
             text-decoration: none;
@@ -786,9 +786,12 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
 }
 
 @media screen and (max-height: 724px) {
-    .playlist {
+    .playlist{
         overflow: hidden;
-        overflow-y: auto;
+        .playlist-names{
+            overflow-y: auto;
+            overflow: auto;
+        }
     }
 }
 
