@@ -788,9 +788,10 @@ div:has(#libreria:target) .up-menu li a[href="#libreria"] {
 @media screen and (max-height: 724px) {
     .playlist{
         overflow: hidden;
+        overflow-y: auto;
+        width: 100%;
         .playlist-names{
-            overflow-y: auto;
-            overflow: auto;
+            width: 100%;
         }
     }
 }
